@@ -1,0 +1,317 @@
+@font-face {
+  font-family: "Inter";
+  src: url("/assets/fonts/Inter-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("/assets/fonts/Inter-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ===== TYPOGRAPHY ===== */
+* {
+    box-sizing: border-box;
+}
+
+
+header h1 {
+    display: flex;
+    flex-wrap: wrap;   
+    font-size: 26px;
+    font-weight: 700;
+    margin-left: 440px;
+    margin-top: 100px;
+    margin-bottom: 10px;
+    line-height: 0.75;
+    color: #544747;
+}
+
+header h2 {
+    font-size: 18px;
+    font-weight: 400;
+    margin-left: 440px;
+    line-height: 0.5;
+    color: #544747;
+}
+
+p {
+    font-size: 15px;
+    line-height: 0.7;
+    color: #544747;
+}
+
+li {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-left: 40px;
+    color: #544747;
+}
+
+.center {
+  margin-left: 440px;
+}
+
+/* ===== GLOBAL SPACING ===== */
+section {
+    padding: 0 40px;
+    margin-top: 10px;
+}
+
+/* ===== BORDER DIVIDER ===== */
+.border {
+    margin: 0 120px;
+    margin-top: 80px;
+    margin-bottom: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    background: #fff;
+}
+
+/* ===== HEADER ===== */
+header {
+    padding: 0 40px;
+}
+
+/* ===== BODY FONT ===== */
+body {
+    font-family: "Inter", sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #544747;
+}
+
+/* ===== BUTTON ===== */
+.btn {
+    align-items: center;
+    gap: 8px;
+    padding: 8px 15px;
+    border-radius: 8px;
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.25s ease;
+    cursor: pointer;
+      /* Hilangkan outline */
+    outline: none;
+}
+
+.btn__icon{
+    width: 18px;
+    height: 18px;
+    opacity: 0.85;
+    transition: opacity 0.25s ease, filter 0.25s ease;
+}
+
+.btn--contact {
+    display: inline-flex;
+    color: #544747;
+    margin: 0 4px;
+    margin-top: 20px;
+    box-shadow:
+    0 1px 3px rgba(0,0,0,0.12),
+    0 1px 2px rgba(0,0,0,0.24);
+}
+
+.btn--prev, .btn--next {
+  background-color: rgb(231, 176, 203);
+  padding: 9px;
+  border-radius:50%;
+  border: none;
+  box-shadow:
+  0 1px 3px rgba(0,0,0,0.12),
+  0 1px 2px rgba(0,0,0,0.24);
+  align-items: center;
+  text-decoration: none;
+  transition: all 0.25s ease;
+  cursor: pointer;
+    /* Tambahkan ini untuk center image */
+    display: flex;
+    justify-content: center;
+}
+
+.btn--prev:hover, .btn--next:hover  {
+  transform: translateY(-3px);
+  background: #746d6d;
+  color: #ffffff;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.btn--contact:hover {
+    transform: translateY(-3px);
+    background: #746d6d;
+    color: #ffffff;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.btn--contact:hover .btn__icon {
+    opacity: 1;          /* biar makin jelas kelihatan */
+    filter: brightness(1.2); /* sedikit lebih terang */
+}
+
+.view-all {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #544747;
+    margin-right: auto;
+}
+
+/* ===== OVAL ===== */
+.oval-container {
+    margin-left: 390px;
+}
+
+.oval-text {
+    font-size: 16px;
+    fill: #333;
+}
+
+/* ===== EXPERIENCE ===== */
+
+.experience-header {
+    display: flex;
+    align-items: center;
+    margin-left: 440px;
+    justify-content: space-between;
+    gap: 0.75rem; /* 12px - flexible spacing */
+}
+
+/* ===== CAROUSEL ===== */
+.carousel {
+  overflow-x: auto; 
+  padding: 16px;
+  scroll-padding: 16px; /* biar snap ga mentok tepi */
+}
+
+.carousel-track {
+  display: flex;
+  gap: 16px;
+  /* Hapus atau ubah scroll-snap */
+  scroll-snap-type: x proximity; /* lebih smooth, ga kaku */
+}
+
+.carousel-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .card {
+    width: 300px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .card {
+    width: 320px;
+  }
+}
+
+/* ===== CARD ===== */
+.card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow:
+        0 1px 3px rgba(0,0,0,0.12),
+        0 1px 2px rgba(0,0,0,0.24);
+    overflow: clip;
+   /* Ubah min-width jadi lebih kecil & responsif */
+   width: 330px; /* atau max-width: 280px; */
+   flex-shrink: 0;
+   
+   scroll-snap-align: start; /* snap di awal card */
+   
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    display: flex; /* atau block, tergantung layout dalam card */
+    flex-direction: column; /* konten card vertikal */
+  }
+  .card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+
+  }
+  .card__content {
+    padding: 1rem;
+  }
+  
+  .card__title {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #333;
+    line-height: 1.3rem; /* gunakan unitless atau 1.5rem */
+  }
+
+  .card__role {
+    margin: 0 0 0.9rem 0;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #666;
+    line-height: 1.3rem; /* gunakan unitless atau 1.5rem */
+  }
+  
+  
+  .card__description {
+    margin: 0 0 1.25rem 0;
+    font-size: 0.95rem;
+    line-height: 1.3rem;
+    color: #666;
+  }
+  
+  .card__button {
+    padding: 0.625rem 1.25rem;
+    border: none;
+    border-radius: 4px;
+    color: #544747;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    box-shadow:
+    0 1px 3px rgba(0,0,0,0.12),
+    0 1px 2px rgba(0,0,0,0.24);
+  }
+  
+  .card__button:hover {
+    transform: translateY(-3px);
+    background: #746d6d;
+    color: #ffffff;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  }
+
+/* ===== CARD ===== */
+ul {
+    margin: 1px;
+    padding: 2px;
+    list-style: none; /* hapus bullet default */
+  }
+  
+  li {
+    position: relative;
+    padding-left: 14px; /* ruang bullet */
+    margin-bottom: 8px;
+  
+    /* MULTILINE ELLIPSIS */
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* jumlah baris, ubah sesuai kebutuhan */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  /* CUSTOM bullet */
+  li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    top: 2px;
+    font-size: 18px;
+    line-height: 1;
+    color: #555;
+  }
