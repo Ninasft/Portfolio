@@ -1,22 +1,9 @@
-document.addEventListener("DOMContentLoaded", () => { 
-    // Ini pakai CLASS (titik di depan)
-    const carousel = document.querySelector(".carousel"); 
-    const nextBtn = document.querySelector(".btn--next"); 
-    const prevBtn = document.querySelector(".btn--prev"); 
+// const btn_sun = document.getElementById("header__sun");
 
-    const cardWidth = 330 + 16; // width + gap 
-   
-    nextBtn.addEventListener("click", () => { 
-      carousel.scrollBy({ 
-        left: cardWidth, 
-        behavior: "smooth" 
-      }); 
-    }); 
-   
-    prevBtn.addEventListener("click", () => { 
-      carousel.scrollBy({ 
-        left: -cardWidth, 
-        behavior: "smooth" 
-      }); 
-    }); 
-  });
+const btn_sun = document.querySelector(".header__sun");
+
+btn_sun.addEventListener("click", () => {
+  document.body.classList.toggle("dark-mode");
+  btn_sun.querySelector(".sun").style.display = document.body.classList.contains("dark-mode") ? "none" : "inline";
+  btn_sun.querySelector(".moon").style.display = document.body.classList.contains("dark-mode") ? "inline" : "none";
+});

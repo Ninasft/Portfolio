@@ -39,13 +39,18 @@
       crossorigin="anonymous"
       href="assets/css/style.css"
     />
+    <link
+      rel="stylesheet"
+      crossorigin="anonymous"
+      href="components/header.css"
+    />
     <script
       crossorigin="anonymous"
       type="application/javascript"
       src="assets/js/main.js"
       defer
     ></script>
-    <link rel="icon" href="assets/icons/logo.ico" type="image/x-icon" />
+    <link rel="icon" href="/logo.ico" type="image/x-icon" />
     <link
       rel="preload"
       as="font"
@@ -60,166 +65,356 @@
       crossorigin=""
       type="font/woff2"
     />
-    <title>Nina | Product Analyst & Frontend Developer</title>
+    <title>Nina | Product Analyst & Modern Web Development</title>
   </head>
   <body>
-    <header>
-      <h1>Siti Fatimah Tuma'ninah</h1>
-      <svg
-        width="221"
-        height="43"
-        xmlns="http://www.w3.org/2000/svg"
-        class="oval-container"
-      >
-        <image href="assets/img/Ellipse.svg" width="221" height="43" />
-        <text x="111" y="26" text-anchor="middle" class="oval-text">
-          Product Analyst
-        </text>
-      </svg>
-    </header>
-    <section id="introduction" class="center">
-      <p>
-        <strong>Hello!</strong> I'm an <strong>Information Systems</strong> at
-        <strong>Universitas Indonesia</strong>.|
-      </p>
-      <p>
-        I focus on building <strong>end</strong>-<strong>to</strong>-<strong
-          >end</strong
-        >
-        product solutions.
-      </p>
-      <p>
-        My goal is to create digital products that work beautifully, scale
-        reliably, and genuinely solve user needs.
-      </p>
-    </section>
-    <section id="contact" class="center">
-      <a
-        href="https://github.com/Ninasft"
-        target="_blank"
-        class="btn btn--contact"
-      >
-        <img src="assets/icons/github-logo.png" alt="" class="btn__icon" />
-        GitHub
-      </a>
-      <a
-        href="https://www.linkedin.com/in/sitifatimahtumaninah/"
-        target="_blank"
-        class="btn btn--contact"
-      >
-        <img
-          src="assets/icons/linkedin.png"
-          alt=""
-          class="btn__icon"
-        />LinkedIn</a
-      >
-      <a
-        href="https://instagram.com/lovninas"
-        target="_blank"
-        class="btn btn--contact"
-      >
-        <img
-          src="assets/icons/instagram.png"
-          alt=""
-          class="btn__icon"
-        />Instagram</a
-      >
-    </section>
-    <div class="border"></div>
-    <section id="experience">
-      <div class="experience-header">
-        <h2>Work Experiences</h2>
-        <a href="#" class="view-all">Lihat Semua</a>
-      </div>
-      <section class="carousel-wrapper">
-        <button class="btn--prev">
-          <img src="assets/icons/back.png" alt="" class="btn__icon" />
+    <header class="header container">
+      <nav>
+        <ul class="header__menu">
+          <li>
+            <a class="header__link" href="#about">About</a>
+          </li>
+          <li>
+            <a class="header__link" href="#experiences">Experiences</a>
+          </li>
+          <li>
+            <a class="header__link" href="#projects">Projects</a>
+          </li>
+          <li>
+            <a class="header__link" href="#contact">Contact</a>
+          </li>
+          <li class="header__line"></li>
+          <li>
+            <button class="header__sun">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                class="sun"
+              >
+                <path
+                  d="M12 2.25a.75.75 0 0 1 .75.75v2.25a.75.75 0 0 1-1.5 0V3a.75.75 0 0 1 .75-.75ZM7.5 12a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM18.894 6.166a.75.75 0 0 0-1.06-1.06l-1.591 1.59a.75.75 0 1 0 1.06 1.061l1.591-1.59ZM21.75 12a.75.75 0 0 1-.75.75h-2.25a.75.75 0 0 1 0-1.5H21a.75.75 0 0 1 .75.75ZM17.834 18.894a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 1 0-1.061 1.06l1.59 1.591ZM12 18a.75.75 0 0 1 .75.75V21a.75.75 0 0 1-1.5 0v-2.25A.75.75 0 0 1 12 18ZM7.758 17.303a.75.75 0 0 0-1.061-1.06l-1.591 1.59a.75.75 0 0 0 1.06 1.061l1.591-1.59ZM6 12a.75.75 0 0 1-.75.75H3a.75.75 0 0 1 0-1.5h2.25A.75.75 0 0 1 6 12ZM6.697 7.757a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 0 0-1.061 1.06l1.59 1.591Z"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                class="moon"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M9.528 1.718a.75.75 0 0 1 .162.819A8.97 8.97 0 0 0 9 6a9 9 0 0 0 9 9 8.97 8.97 0 0 0 3.463-.69.75.75 0 0 1 .981.98 10.503 10.503 0 0 1-9.694 6.46c-5.799 0-10.5-4.7-10.5-10.5 0-4.368 2.667-8.112 6.46-9.694a.75.75 0 0 1 .818.162Z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </button>
+          </li>
+          <li>
+            <a class="header__resume btn btn--contact" href="#">Resume</a>
+          </li>
+        </ul>
+        <button class="header__bars">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 5.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 5.25Zm0 4.5A.75.75 0 0 1 3.75 9h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 9.75Zm0 4.5a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Zm0 4.5a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z"
+              clip-rule="evenodd"
+            />
+          </svg>
         </button>
-        <div class="carousel">
-          <div class="carousel-track">
-            <div class="card">
-              <div class="card__content">
-                <h3 class="card__title">PT Bosnet Distribution Indonesia</h3>
-                <p class="card__role">IT Solution Designer</p>
-                <ul class="card__description">
-                  <li>
-                    Analyzed and translated complex business requirements from
-                    diverse stakeholders into actionable product insights and
-                    scalable IT solutions adopted by more than 5 clients.
-                  </li>
-                  <li>
-                    Created 3+ Functional Specification Documents (FSDs) and
-                    detailed user stories that enabled the development of
-                    reusable modules and features across multiple client
-                    implementations.
-                  </li>
-                </ul>
-                <button class="card__button">Lihat Detail</button>
-              </div>
+      </nav>
+    </header>
+    <main>
+      <section class="hero container section">
+        <div class="introduction__photo" data-tooltip="Hi, I'm Nina! 👋">
+          <img
+            src="assets/img/nina.jpg"
+            style="border-radius: 50%"
+            alt="Nina's Photo"
+          />
+        </div>
+        <div class="introduction">
+          <div class="introduction__name">
+            <h1>Siti Fatimah Tuma'ninah</h1>
+          </div>
+          <div class="introduction__role">
+            <p>Product Analyst & Frontend Developer</p>
+          </div>
+          <div class="introduction__description">
+            <p>
+              <strong>Hello!</strong> I'm an
+              <strong>Information Systems</strong> at
+              <strong>Universitas Indonesia</strong>.| <br />I focus on building
+              <strong>end</strong>-<strong>to</strong>-<strong>end</strong>
+              product solutions. <br />My goal is to create digital products
+              that work beautifully,<br />
+              scale reliably, and genuinely solve user needs.
+            </p>
+          </div>
+          <div class="introduction__button">
+            <a
+              href="https://github.com/Ninasft"
+              target="_blank"
+              class="btn btn--contact"
+            >
+              <img
+                src="assets/icons/github-logo.png"
+                alt="logo github"
+                class="btn__icon"
+              />
+              GitHub
+            </a>
+            <a
+              href="https://www.linkedin.com/in/sitifatimahtumaninah/"
+              target="_blank"
+              class="btn btn--contact"
+            >
+              <img
+                src="assets/icons/linkedin.png"
+                alt="logo linkedin"
+                class="btn__icon"
+              />LinkedIn</a
+            >
+            <a
+              href="https://instagram.com/lovninas"
+              target="_blank"
+              class="btn btn--contact"
+            >
+              <img
+                src="assets/icons/instagram.png"
+                alt="logo instagram"
+                class="btn__icon"
+              />Instagram</a
+            >
+          </div>
+        </div>
+      </section>
+      <section id="about" class="about container section">
+        <h2 class="about-me">About me</h2>
+        <div class="divider"></div>
+        <h1 class="about__title">
+          FRONT-END<br />
+          WEB DEVELOPER.
+        </h1>
+        <p class="about-description">
+          Hello there! I'm
+          <strong>Frontend & Product-focused developer</strong> who loves
+          building thoughtful, user-centered experiences on the web. I start my
+          mornings early (no coffee needed), fire up my laptop, and spend the
+          day turning ideas into clean, usable products.
+        </p>
+        <p class="about-description">
+          People often say I'm <b>a bit obsessed</b>—and they're probably right.
+          I'm highly driven, naturally curious, and deeply interested in
+          learning across different areas, from <strong>systems</strong> and
+          <strong>data</strong> to <strong>frontend web development</strong>.
+        </p>
+        <p class="about-description">
+          Lately, I've been especially drawn to the product side—understanding
+          the why behind features, how systems connect, and how technology can
+          solve real user problems. When I'm not coding or thinking about
+          products, you'll probably find me
+          <em><strong>playing Valorant</strong></em> and recharging before
+          diving back in.
+        </p>
+      </section>
+      <section class="tech container section">
+        <h2 class="about-me">Tech Stacks</h2>
+        <div class="tech-stack">
+          <div class="tech-stack__items">
+            <div class="tech-stack__item">
+              <img src="./assets/icons/html.png" alt="HTML" />
+              <span>HTML</span>
             </div>
-            <div class="card">
-              <div class="card__content">
-                <h3 class="card__title">Shenox Indonesia</h3>
-                <p class="card__role">Business Operations</p>
-                <ul class="card__description">
-                  <li>
-                    Developed detailed Product Requirement Documents (PRDs) and
-                    20+ SOPs to streamline inbound and outbound operations
-                    within Odoo.
-                  </li>
-                  <li>
-                    Built and optimized internal product prototypes using Glide
-                    (no-code platform), preparing data and testing scenarios to
-                    validate business workflows before system deployment.
-                  </li>
-                </ul>
-                <button class="card__button">Lihat Detail</button>
-              </div>
+            <div class="tech-stack__item">
+              <img src="./assets/icons/css.png" alt="CSS" />
+              <span>CSS</span>
             </div>
-            <div class="card">
-              <div class="card__content">
-                <h3 class="card__title">Aruna Indonesia</h3>
-                <p class="card__role">Product Operations Intern</p>
-                <ul class="card__description">
-                  <li>
-                    Developed detailed Product Requirement Documents (PRDs) and
-                    20+ SOPs to streamline inbound and outbound operations
-                    within Odoo.
-                  </li>
-                  <li>
-                    Built and optimized internal product prototypes using Glide
-                    (no-code platform), preparing data and testing scenarios to
-                    validate business workflows before system deployment.
-                  </li>
-                </ul>
-                <button class="card__button">Lihat Detail</button>
-              </div>
+            <div class="tech-stack__item">
+              <img src="./assets/icons/springboot.svg" alt="HTML" />
+              <span>SpringBoot</span>
             </div>
-            <div class="card">
-              <div class="card__content">
-                <h3 class="card__title">PT Surya Citra Media Tbk</h3>
-                <p class="card__role">SAP Functional Intern</p>
-                <ul class="card__description">
-                  <li>
-                    Supported SAP S/4HANA data migration projects, ensuring data
-                    accuracy and consistency across development (DEV), QA, and
-                    production (PROD) environments.
-                  </li>
-                  <li>
-                    Configured and mapped master data templates to align with
-                    business process requirements, enabling smooth system
-                    integration and deployment.
-                  </li>
-                </ul>
-                <button class="card__button">Lihat Detail</button>
-              </div>
+            <div class="tech-stack__item">
+              <img src="./assets/icons/java.svg" alt="JAVA" />
+              <span>Java</span>
+            </div>
+            <div class="tech-stack__item">
+              <img src="./assets/icons/selenium.png" alt="SELENIUM" />
+              <span>Selenium</span>
+            </div>
+            <div class="tech-stack__item">
+              <img src="./assets/icons/javascript.svg" alt="JAVA SCRIPT" />
+              <span>Java Script</span>
+            </div>
+            <div class="tech-stack__item">
+              <img src="./assets/icons/sqlite.png" alt="SQLITE" />
+              <span>SQLite</span>
+            </div>
+            <div class="tech-stack__item">
+              <img src="./assets/icons/python.svg" alt="PYTHON" />
+              <span>Python</span>
+            </div>
+            <div class="tech-stack__item">
+              <img src="./assets/icons/git.png" alt="GIT" />
+              <span>Git</span>
+            </div>
+            <div class="tech-stack__item">
+              <img src="./assets/icons/github.png" alt="GITHUB" />
+              <span>GitHub</span>
+            </div>
+            <div class="tech-stack__item">
+              <img src="./assets/icons/django.png" alt="DJANGO" />
+              <span>Django</span>
+            </div>
+            <div class="tech-stack__item">
+              <img src="./assets/icons/bootstrap.png" alt="BOOTSTRAP" />
+              <span>Bootstrap</span>
+            </div>
+            <div class="tech-stack__item">
+              <img src="./assets/icons/mysql.png" alt="MYSQL" />
+              <span>MySQL</span>
+            </div>
+            <div class="tech-stack__item">
+              <img src="./assets/icons/postgresql.png" alt="POSTGRESSQL" />
+              <span>PostgresSQL</span>
+            </div>
+            <div class="tech-stack__item">
+              <img src="./assets/icons/postman.png" alt="POSTMAN" />
+              <span>Postman</span>
+            </div>
+            <div class="tech-stack__item">
+              <img src="./assets/icons/vite.png" alt="VITE" />
+              <span>Vite</span>
             </div>
           </div>
         </div>
-        <button class="btn--next">
-          <img src="assets/icons/next.png" alt="" class="btn__icon" />
-        </button>
       </section>
-    </section>
+      <section id="experiences" class="experience container section">
+        <div class="experience-title">
+          <h2>Work Experiences</h2>
+        </div>
+        <div class="experience-all">
+          <a href="#" class="btn btn--viewAll">Lihat Semua</a>
+        </div>
+      </section>
+      <section class="experience__card container">
+        <div class="card">
+          <div class="card__content">
+            <h3 class="card__title">PT Bosnet Distribution Indonesia</h3>
+            <p class="card__role">IT Solution Designer</p>
+            <ul class="card__description">
+              <li>
+                Analyzed and translated complex business requirements from
+                diverse stakeholders into actionable product insights and
+                scalable IT solutions adopted by more than 5 clients.
+              </li>
+              <li>
+                Created 3+ Functional Specification Documents (FSDs) and
+                detailed user stories that enabled the development of reusable
+                modules and features across multiple client implementations.
+              </li>
+            </ul>
+            <div class="tags">
+              <span class="tag">Distribution Management System (DMS)</span>
+              <span class="tag">SQL</span>
+              <span class="tag">SQLite</span>
+              <span class="tag">SSMS</span>
+              <span class="tag">Figma</span>
+              <span class="tag">Google Workspace</span>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card__content">
+            <h3 class="card__title">Shenox Indonesia</h3>
+            <p class="card__role">Business Operations</p>
+            <ul class="card__description">
+              <li>
+                Integrated Big Seller ERP with Shopee, Tokopedia, Lazada, and
+                TikTok Shop, reducing manual operations by 40%
+              </li>
+              <li>
+                Analyzed sales data using Kalodata, uncovering insights that
+                increased monthly sales by 20%.
+              </li>
+              <li>
+                Partnered with marketing & content teams to improve campaign
+                quality, raising engagement by 25%.
+              </li>
+            </ul>
+            <div class="tags">
+              <span class="tag">Kalodata</span>
+              <span class="tag">Big Seller</span>
+              <span class="tag">Canva</span>
+              <span class="tag">Tiktok</span>
+              <span class="tag">Google Workspace</span>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card__content">
+            <h3 class="card__title">Aruna Indonesia</h3>
+            <p class="card__role">Product Operations Intern</p>
+            <ul class="card__description">
+              <li>
+                Developed detailed Product Requirement Documents (PRDs) and 20+
+                SOPs to streamline inbound and outbound operations within Odoo.
+              </li>
+              <li>
+                Built and optimized internal product prototypes using Glide
+                (no-code platform), preparing data and testing scenarios to
+                validate business workflows before system deployment.
+              </li>
+            </ul>
+            <div class="tags">
+              <span class="tag">Jira</span>
+              <span class="tag">Odoo ERP</span>
+              <span class="tag">Google Workspace</span>
+              <span class="tag">Miro</span>
+              <span class="tag">Glide</span>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card__content">
+            <h3 class="card__title">PT Surya Citra Media Tbk</h3>
+            <p class="card__role">SAP Functional Intern</p>
+            <ul class="card__description">
+              <li>
+                Supported SAP S/4HANA data migration projects, ensuring data
+                accuracy and consistency across development (DEV), QA, and
+                production (PROD) environments.
+              </li>
+              <li>
+                Configured and mapped master data templates to align with
+                business process requirements, enabling smooth system
+                integration and deployment.
+              </li>
+            </ul>
+            <div class="tags">
+              <span class="tag">SAP ECC</span>
+              <span class="tag">SAP S/4HANA</span>
+              <span class="tag">Microsoft Office</span>
+              <span class="tag">Google Workspace</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="projects" class="project container section">
+        <h2 class="about-me">Projects</h2>
+      </section>
+    </main>
+    <footer class="footer container section">
+      <p>© 2025 Nina. All rights reserved.</p>
+      <p>
+        <b>About this website:</b> Built with ❤️ using HTML & Vanilla CSS,
+        hosted on Vercel.
+      </p>
+    </footer>
   </body>
 </html>
