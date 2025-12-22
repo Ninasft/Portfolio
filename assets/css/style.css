@@ -594,7 +594,7 @@ margin-top: 5rem;
     margin: 0 0 .3rem 0;
     font-size: 0.95rem;
     line-height: 1.3rem;
-    color: var(--clr-slate400);
+    color: var(--clr-slate600);
   }
   
   .tags {
@@ -732,8 +732,8 @@ ul {
     max-width: 1536px;
   }
   .card {
-    max-width: 550px; 
-    min-height: 350px;
+    max-width: 590px; 
+    min-height: 385px;
   }
   .about__title{
     font-size: var(--size-7xl);
