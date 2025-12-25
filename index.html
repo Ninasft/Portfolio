@@ -50,7 +50,7 @@
       src="assets/js/main.js"
       defer
     ></script>
-    <link rel="icon" href="/logo.ico" type="image/x-icon" />
+    <link rel="icon" href="public/logo.ico" type="image/x-icon" />
     <link
       rel="preload"
       as="font"
@@ -68,8 +68,10 @@
     <title>Nina | Product Analyst & Modern Web Development</title>
   </head>
   <body>
-    <header class="header container">
-      <nav>
+    <header class="header">
+      <nav class="navbar">
+        <a href="/" class="logo"> Nina </a>
+
         <ul class="header__menu">
           <li>
             <a class="header__link" href="#about">About</a>
@@ -139,24 +141,26 @@
           />
         </div>
         <div class="introduction">
-          <div class="introduction__name">
+          <div class="introduction__name animate slideInLeft animate--fast">
             <h1>Siti Fatimah Tuma'ninah</h1>
           </div>
-          <div class="introduction__role">
+          <div class="introduction__role animate slideInRight">
             <p>Product Analyst & Frontend Developer</p>
           </div>
-          <div class="introduction__description">
+          <div class="introduction__description animate slideInLeft">
             <p>
               <strong>Hello!</strong> I'm an
               <strong>Information Systems</strong> at
-              <strong>Universitas Indonesia</strong>.| <br />I focus on building
-              <strong>end</strong>-<strong>to</strong>-<strong>end</strong>
+              <strong>Universitas Indonesia</strong>.| <br /><br />I focus on
+              building <strong>end</strong>-<strong>to</strong>-<strong
+                >end</strong
+              >
               product solutions. <br />My goal is to create digital products
               that work beautifully,<br />
               scale reliably, and genuinely solve user needs.
             </p>
           </div>
-          <div class="introduction__button">
+          <div class="introduction__button animate slideInRight animate--fast">
             <a
               href="https://github.com/Ninasft"
               target="_blank"
@@ -295,11 +299,8 @@
         </div>
       </section>
       <section id="experiences" class="experience container section">
-        <div class="experience-title">
+        <div class="about-me">
           <h2>Work Experiences</h2>
-        </div>
-        <div class="experience-all">
-          <a href="#" class="btn btn--viewAll">Lihat Semua</a>
         </div>
       </section>
       <section class="experience__card container">
@@ -405,8 +406,11 @@
           </div>
         </div>
       </section>
-      <section id="projects" class="project container section">
-        <h2 class="about-me">Projects</h2>
+      <section id="projects" class="projects container section">
+        <h2>Projects</h2>
+      </section>
+      <section id="Contact" class="contact container section">
+        <h2>Contact</h2>
       </section>
     </main>
     <footer class="footer container section">
