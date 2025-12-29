@@ -54,4 +54,9 @@ mobileSun.addEventListener("click", () => {
   mobileSun.querySelector(".moon").style.display = document.body.classList.contains("dark-mode") ? "inline" : "none";
 });
 
+mobileSun.addEventListener('click', () => {
+  isMobileNavOpen = false; 
+  mobileNav.style.display='none';
+  document.body.style.overflowY='auto';
+})
 
