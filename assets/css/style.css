@@ -1064,10 +1064,6 @@ footer::before {
     font-size: var(--size-xxs);
   }
 
-  p {
-    font-size: var(--size-xs);
-  }
-
 }
 
 @keyframes slideInLeft {
