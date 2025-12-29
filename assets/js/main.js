@@ -29,7 +29,7 @@ let isMobileNavOpen = false;
 
 headerbtn.addEventListener("click", () => {
   isMobileNavOpen = !isMobileNavOpen;
-  if (isMobileNavOpen===true) { 
+  if (isMobileNavOpen) { 
     mobileNav.style.display = 'flex';
     document.body.style.overflowY='hidden';
   } else{
