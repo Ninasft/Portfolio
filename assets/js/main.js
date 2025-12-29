@@ -52,8 +52,8 @@ mobileLinks.forEach(link => {
 const mobileSun = document.querySelector(".mobile-nav__sun");
 mobileSun.addEventListener("click", () => {
   document.body.classList.toggle("dark-mode");
-  btn_sun.querySelector(".sun").style.display = document.body.classList.contains("dark-mode") ? "none" : "inline";
-  btn_sun.querySelector(".moon").style.display = document.body.classList.contains("dark-mode") ? "inline" : "none";
+  mobileSun.querySelector(".sun").style.display = document.body.classList.contains("dark-mode") ? "none" : "inline";
+  mobileSun.querySelector(".moon").style.display = document.body.classList.contains("dark-mode") ? "inline" : "none";
 });
 
 
