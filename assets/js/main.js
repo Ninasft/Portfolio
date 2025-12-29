@@ -31,12 +31,13 @@ headerbtn.addEventListener("click", () => {
   isMobileNavOpen = !isMobileNavOpen;
   if (isMobileNavOpen) { 
     mobileNav.style.display = 'flex';
-    document.body.style.overflowY='hidden';
-  } else{
+    document.body.style.overflow = 'hidden'; // Ganti overflowY jadi overflow
+    document.documentElement.style.overflow = 'hidden'; // Tambahin ini
+  }else{
     mobileNav.style.display = 'none';
-    document.body.style.overflowY='auto';
+    document.body.style.overflow = 'auto';
+    document.documentElement.style.overflow = 'auto';
   }
-  
 }
 );
 
