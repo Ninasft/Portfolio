@@ -1,16 +1,16 @@
 # 🌐 Portfolio
 
-Ini adalah **portfolio website pertama** yang aku build sebagai bagian dari proses belajar dan eksplorasi di bidang web development.
+This is my **first personal portfolio website**, built as part of my learning journey in web development.
 
-Website ini dibangun menggunakan **HTML**, **Vanilla CSS**, dan **sedikit JavaScript**, tanpa framework atau library eksternal, dengan tujuan memahami dasar-dasar struktur, styling, dan interaksi di web secara lebih mendalam.
+The website is developed using **HTML**, **Vanilla CSS**, and a **small amount of JavaScript**, without any frameworks or external libraries. The main goal of this project is to strengthen my understanding of core web fundamentals, including structure, styling, and basic interactivity.
 
 ---
 
 ## ✨ Features
 - Responsive layout (desktop & mobile friendly)
-- Simple and clean UI
-- Smooth navigation antar section
-- Basic interactivity menggunakan JavaScript
+- Clean and simple user interface
+- Smooth navigation between sections
+- Basic interactivity using JavaScript
 
 ---
 
@@ -22,20 +22,22 @@ Website ini dibangun menggunakan **HTML**, **Vanilla CSS**, dan **sedikit JavaSc
 ---
 
 ## 🎯 Purpose
-Project ini dibuat untuk:
-- Membangun fondasi kuat di HTML, CSS, dan JavaScript
-- Melatih pemahaman layouting dan styling tanpa framework
-- Menjadi portfolio awal sebelum lanjut ke project yang lebih kompleks
+This project was created to:
+- Build a strong foundation in HTML, CSS, and JavaScript
+- Practice layout and styling without relying on frameworks
+- Serve as an initial portfolio before moving on to more advanced projects
 
 ---
 
 ## 🚀 Future Improvements
-- Tambah animasi yang lebih halus
-- Optimasi struktur CSS
-- Refactor JavaScript agar lebih modular
-- Implementasi framework (opsional)
+- Add smoother animations and transitions
+- Improve CSS structure and maintainability
+- Refactor JavaScript for better readability and modularity
+- (Optional) Implement a frontend framework
 
 ---
 
 ## 📌 Notes
-Masih banyak ruang untu
+There is still a lot of room for improvement, but this project represents an important milestone as my **first portfolio website built from scratch**.
+
+Thank you for visiting 🙌
